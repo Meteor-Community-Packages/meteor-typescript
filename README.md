@@ -1,5 +1,9 @@
 # meteor-typescript
-[Meteor](https://meteor.com) typescript compiler plugin package
+[Meteor](https://meteor.com) typescript compiler plugin package.
+
+Depends on https://github.com/ref-app/meteor-typescript-compiler for the bulk of the implementation.
+
+This project is just a small wrapper to install the compiler as a Meteor plugin.
 
 ## Work in progress
 The intent is build a plugin based on the incremental compilation support released in Typescript 3.6 and have it work just like the old barbatus:typescript package but much faster. Keep the following properties:
