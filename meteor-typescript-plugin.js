@@ -1,6 +1,4 @@
 
-process.stderr.write("*** registering compiler\n")
-
 console.log("registering compiler");
 
 Plugin.registerCompiler(
@@ -9,18 +7,9 @@ Plugin.registerCompiler(
     filenames: ["tsconfig.json"],
   },
   function () {
-    return new TypeScriptCompiler();
+    console.log("compiler factory");
+    console.log(typeof MeteorTypescriptCompiler);
+    return new MeteorTypescriptCompiler();
   }
 );
 
-class TypeScriptCompiler {
-  constructor() {
-    console.log("TypeScriptCompiler constructor called");
-  }
-  processFilesForTarget(inputFiles) {
-    console.log("processFilesForTarget called");
-    for (const inputFile of inputFiles) {
-      console.log(inputFile.getPathInPackage());
-    }
-  }
-}
