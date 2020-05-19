@@ -23,3 +23,11 @@ meteor run
 ```
 
 This builds the two packages and uses them to try to compile the small example app.
+
+## How to install and use
+Once this plugin works and packages are up on Atmosphere, you just add one package to your application.
+
+```
+# Will not work yet - the packages haven’t been published
+# meteor add refapp:meteor-typescript
+```
