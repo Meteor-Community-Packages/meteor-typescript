@@ -1,6 +1,3 @@
-
-console.log("registering compiler");
-
 Plugin.registerCompiler(
   {
     extensions: ["ts", "tsx"],
@@ -8,9 +5,6 @@ Plugin.registerCompiler(
   },
   function () {
     console.log("compiler factory");
-    console.log(MeteorTypescriptCompiler);
-    console.log(typeof MeteorTypescriptCompiler);
     return new MeteorTypescriptCompiler();
   }
 );
-
