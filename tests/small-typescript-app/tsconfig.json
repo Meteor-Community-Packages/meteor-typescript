@@ -6,8 +6,7 @@
     "lib": ["esnext", "dom"],
     "allowJs": true,
     "checkJs": false,
-    "jsx": "preserve",
-    "incremental": true,
+    "jsx": "react",
     "noEmit": true,
 
     /* Strict Type-Checking Options */
@@ -33,8 +32,5 @@
     "esModuleInterop": true,
     "preserveSymlinks": true
   },
-  "exclude": [
-    "./.meteor/**",
-    "./packages/**"
-  ]
+  "exclude": ["./.meteor/**", "./packages/**"]
 }
