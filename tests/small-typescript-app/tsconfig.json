@@ -2,7 +2,7 @@
   "compilerOptions": {
     /* Basic Options */
     "target": "es2018",
-    "module": "esNext",
+    "module": "commonjs",
     "lib": ["esnext", "dom"],
     "allowJs": true,
     "checkJs": false,
