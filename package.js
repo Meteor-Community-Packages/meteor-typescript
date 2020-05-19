@@ -20,5 +20,4 @@ Package.onUse(function (api) {
   api.versionsFrom("1.10");
   api.use("ecmascript");
   api.use("refapp:meteor-typescript-compiler");
-  api.mainModule("meteor-typescript-plugin.js");
 });
