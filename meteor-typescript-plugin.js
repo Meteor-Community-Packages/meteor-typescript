@@ -1,4 +1,8 @@
 
+process.stderr.write("*** registering compiler\n")
+
+console.log("registering compiler");
+
 Plugin.registerCompiler(
   {
     extensions: ["ts", "tsx"],
