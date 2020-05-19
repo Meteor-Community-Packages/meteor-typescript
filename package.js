@@ -8,7 +8,6 @@ Package.describe({
 
 Package.registerBuildPlugin({
   name: "meteor-typescript",
-  use: ['typescript'],
   sources: ["meteor-typescript.ts"],
   npmDependencies: {
     typescript: "3.9.2",
@@ -17,15 +16,15 @@ Package.registerBuildPlugin({
 
 Package.onUse(function (api) {
   api.versionsFrom("1.10");
-  api.use("typescript");
+  api.use("isobuild:compiler-plugin@1.0.0");
   api.use("ecmascript");
+  api.use("typescript");
   api.mainModule("meteor-typescript.ts");
 });
 
 Package.onTest(function (api) {
-  api.use("typescript");
   api.use("ecmascript");
   api.use("tinytest");
   api.use("refapp:meteor-typescript");
-  api.mainModule("meteor-typescript-tests.ts");
+  api.mainModule("meteor-typescript-tests.js");
 });

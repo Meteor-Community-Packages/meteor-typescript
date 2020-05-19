@@ -1,15 +1,3 @@
-// Write your package code here!
-
-// Variables exported by this module can be imported by other packages and
-// applications. See meteor-typescript-tests.js for an example of importing.
-export const name = "meteor-typescript";
-
-declare class Plugin {
-  static registerCompiler(
-    options: { extensions: string[]; filenames: string[] },
-    factory: () => any
-  ): void;
-}
 
 Plugin.registerCompiler(
   {
@@ -21,12 +9,10 @@ Plugin.registerCompiler(
   }
 );
 
-class TypeScriptCompiler extends Compiler {
+class TypeScriptCompiler {
   constructor() {
-    super();
     console.log("constructor called");
   }
-  processFilesForTarget(inputFiles: InputFile[]) {
-    inputFiles;
+  processFilesForTarget(inputFiles) {
   }
 }
