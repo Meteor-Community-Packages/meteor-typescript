@@ -31,3 +31,7 @@ Once this plugin works and packages are up on Atmosphere, you just add one packa
 # Will not work yet - the packages haven’t been published
 # meteor add refapp:meteor-typescript
 ```
+
+## Contributors
+
+* Per Bergland - https://github.com/perbergland
