@@ -9,6 +9,7 @@
     "jsx": "react",
     "noEmit": true,
     "importHelpers": true,
+    "allowSyntheticDefaultImports": true, 
 
     /* Strict Type-Checking Options */
     "strict": true,
