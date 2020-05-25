@@ -6,12 +6,15 @@ Depends on https://github.com/ref-app/meteor-typescript-compiler for the bulk of
 This project is just a small wrapper to install the compiler as a Meteor plugin.
 
 ## Work in progress
-The intent is build a plugin based on the incremental compilation support released in Typescript 3.6 and have it work just like the old barbatus:typescript package but much faster. Keep the following properties:
+This plugin is based on the incremental compilation support released in Typescript 3.6 and works like a dropin replacement
+to the old barbatus:typescript package and its forks.
 
-* Output type errors as part of the build process
-* Use settings in tsconfig.json
+Some main attributes:
 
-## How to test (on a system with proper symlink support)
+* Outputs type compilation errors as part of the build process and will fail if a file could not be transpiled to js.
+* Uses settings in tsconfig.json (overrides a few, like "incremental")
+
+## How to test using the provided test application (requires a system with proper symlink support)
 
 ```
 git clone git@github.com:ref-app/meteor-typescript.git
@@ -25,10 +28,9 @@ meteor run
 This builds the two packages and uses them to try to compile the small example app.
 
 ## How to install and use
-Once this plugin works and packages are up on Atmosphere, you just add one package to your application.
 
-```
-# Will not work yet - the packages haven’t been published
+```sh
+# meteor remove typescript # (if needed)
 # meteor add refapp:meteor-typescript
 ```
 

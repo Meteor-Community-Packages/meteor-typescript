@@ -1,19 +1,21 @@
+const COMPILER_VERSION = "0.0.2";
+const TYPESCRIPT_VERSION = "3.9.2";
+const MY_VERSION = COMPILER_VERSION; // Keep in sync
+
 Package.describe({
   name: "refapp:meteor-typescript",
-  version: "0.0.1",
+  version: MY_VERSION,
   summary: "A Typescript compiler plugin for Meteor",
   git: "https://github.com/ref-app/meteor-typescript",
   documentation: "README.md",
 });
-
-const COMPILER_VERSION = "0.0.1";
 
 Package.registerBuildPlugin({
   name: "meteor-typescript",
   use: ["refapp:meteor-typescript-compiler@" + COMPILER_VERSION],
   sources: ["meteor-typescript-plugin.js"],
   npmDependencies: {
-    typescript: "3.9.2",
+    typescript: TYPESCRIPT_VERSION,
   },
 });
 
