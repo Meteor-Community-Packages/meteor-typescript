@@ -14,6 +14,13 @@ Some main attributes:
 * Outputs type compilation errors as part of the build process and will fail if a file could not be transpiled to js.
 * Uses settings in tsconfig.json (overrides a few, like "incremental")
 
+## How to install and use
+
+```sh
+# meteor remove typescript # (if needed)
+# meteor add refapp:meteor-typescript
+```
+
 ## How to test using the provided test application (requires a system with proper symlink support)
 
 ```
@@ -26,13 +33,6 @@ meteor run
 ```
 
 This builds the two packages and uses them to try to compile the small example app.
-
-## How to install and use
-
-```sh
-# meteor remove typescript # (if needed)
-# meteor add refapp:meteor-typescript
-```
 
 ## Contributors
 
