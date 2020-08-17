@@ -1,7 +1,7 @@
 # meteor-typescript
 [Meteor](https://meteor.com) typescript compiler plugin package.
 
-Depends on https://github.com/ref-app/meteor-typescript-compiler for the bulk of the implementation.
+Depends on https://github.com/Meteor-Community-Packages/meteor-typescript-compiler for the bulk of the implementation.
 
 This project is just a small wrapper to install the compiler as a Meteor plugin.
 
