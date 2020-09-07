@@ -1,6 +1,10 @@
 # Changes
 
-## 0.2 2020-09-07
+## 0.2.1 2020-09-07
+
+* Add back setting of disk cache directory for BabelCompiler
+
+## 0.2.0 2020-09-07
 
 * Typescript upgraded to 4.0.2
 * Output caching is now enabled by default but can be disabled through by setting METEOR_TYPESCRIPT_CACHE_DISABLED to a truthy value
