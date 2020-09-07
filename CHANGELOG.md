@@ -8,7 +8,7 @@
 
 * Typescript upgraded to 4.0.2
 * Output caching is now enabled by default but can be disabled through by setting METEOR_TYPESCRIPT_CACHE_DISABLED to a truthy value
-* Cache files are now stored in .meteor/local/pluginCache/refapp-meteor-typescript/[version]
+* Cache files are now stored in .meteor/local/pluginCache/refapp_meteor-typescript/[version]
 
 ## 0.1.6 2020-07-31
 Added experimental output caching, enabled if TYPESCRIPT_CACHE is set to any truthy value.
