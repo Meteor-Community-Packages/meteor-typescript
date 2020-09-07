@@ -5,7 +5,7 @@ Depends on https://github.com/Meteor-Community-Packages/meteor-typescript-compil
 
 This project is just a small wrapper to install the compiler as a Meteor plugin.
 
-## Work in progress
+## History
 This plugin is based on the incremental compilation support released in Typescript 3.6 and works like a dropin replacement
 to the old barbatus:typescript package and its forks.
 
@@ -20,6 +20,9 @@ Some main attributes:
 # meteor remove typescript # (if needed)
 # meteor add refapp:meteor-typescript
 ```
+
+## Cached files
+To get advantage of cached files on a build server, ensure that you save and restore the content of the .meteor/local/plugin-cache directory between builds.
 
 ## How to test using the provided test application (requires a system with proper symlink support)
 
