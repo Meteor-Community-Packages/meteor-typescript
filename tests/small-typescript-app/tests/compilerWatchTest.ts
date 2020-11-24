@@ -1,7 +1,4 @@
 #!/usr/bin/env ts-node
-
-// ts-node-script tests/compilerWatchTest.ts
-
 import * as ts from "typescript";
 
 export const formatHost: ts.FormatDiagnosticsHost = {
@@ -10,9 +7,11 @@ export const formatHost: ts.FormatDiagnosticsHost = {
   getNewLine: () => ts.sys.newLine,
 };
 
-const cachePath = "./outfiles"; //  "../.meteor/local/plugin-cache/refapp_meteor-typescript/local/v2cache";
+const cachePath =
+  "../.meteor/local/plugin-cache/refapp_meteor-typescript/local/v2cache";
 
 function watchMain() {
+  ts.sys.getCurrentDirectory;
   const configPath = ts.findConfigFile(
     /*searchPath*/ "../",
     ts.sys.fileExists,
@@ -52,17 +51,17 @@ function watchMain() {
     {
       ...ts.sys,
       write: (s) => console.log(s),
-      readFile: (path, encoding) => {
-        if (path.includes("buildinfo")) {
-          console.log(`reading ${path}`);
-        }
-        return ts.sys.readFile(path, encoding);
+      writeFile: (path, ...rest) => {
+        console.log(path);
+        ts.sys.writeFile(path, ...rest);
       },
     },
     createProgram,
     reportDiagnostic,
     reportWatchStatusChanged
   );
+
+  host.trace = (s) => console.log(s);
 
   // You can technically override any given hook on the host, though you probably
   // don't need to.
@@ -76,25 +75,8 @@ function watchMain() {
   const origPostProgramCreate = host.afterProgramCreate;
 
   host.afterProgramCreate = (program) => {
-    const { emit: origEmit } = program;
     console.log("** We finished making the program! **");
-    origPostProgramCreate?.({
-      ...program,
-      emit: (targetSourceFile, origWriteFile, ...emitRest) => {
-        const writeFile: typeof origWriteFile = (path, ...rest) => {
-          console.log(`emitting ${path} writeFile`);
-          const realWriteFile = origWriteFile ?? ts.sys.writeFile;
-          realWriteFile(path, ...rest);
-        };
-        console.log(`Emitting`);
-        const result = origEmit(targetSourceFile, writeFile, ...emitRest);
-        result.emittedFiles?.forEach((emittedFile) =>
-          console.log(`Emitted ${emittedFile}`)
-        );
-        console.log(`Emitting complete`);
-        return result;
-      },
-    });
+    origPostProgramCreate?.(program);
   };
 
   // `createWatchProgram` creates an initial program, watches files, and updates

@@ -34,5 +34,5 @@
     "esModuleInterop": true,
     "preserveSymlinks": true
   },
-  "exclude": ["./.meteor/**", "./packages/**", "**/tests/**", "outfiles"]
+  "exclude": ["./.meteor/**", "./packages/**", "**/tests/**"]
 }
