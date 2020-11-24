@@ -9,7 +9,7 @@
     "jsx": "react",
     "noEmit": true,
     "importHelpers": true,
-    "allowSyntheticDefaultImports": true,
+    "allowSyntheticDefaultImports": true, 
 
     /* Strict Type-Checking Options */
     "strict": true,
@@ -32,7 +32,7 @@
     "resolveJsonModule": true,
     "types": ["node", "mocha"],
     "esModuleInterop": true,
-    "preserveSymlinks": true
+    "preserveSymlinks": true,
   },
-  "exclude": ["./.meteor/**", "./packages/**", "**/tests/**"]
+  "exclude": ["./.meteor/**", "./packages/**"]
 }
