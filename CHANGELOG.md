@@ -1,5 +1,13 @@
 # Changes
 
+## 0.3.1 2020-12-07
+
+- Use cache path relative source directory also in test mode to be able to reuse incremental cache
+
+## 0.3.0 2020-11-25
+
+- Major rewrite to use incremental watching compiler for much faster (re)compiles
+
 ## 0.2.2 2020-11-21
 
 - Typescript upgraded to 4.1.2

@@ -1,4 +1,4 @@
-const COMPILER_VERSION = "0.3.0";
+const COMPILER_VERSION = "0.3.1";
 const TYPESCRIPT_VERSION = "4.1.2";
 const MY_VERSION = COMPILER_VERSION; // Keep in sync
 
