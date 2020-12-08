@@ -1,5 +1,9 @@
 # Changes
 
+## 0.3.2 2020-12-08
+
+- Relax the meteor core typescript dependency so the compiler works with meteor 1.12
+
 ## 0.3.1 2020-12-07
 
 - Use cache path relative source directory also in test mode to be able to reuse incremental cache
