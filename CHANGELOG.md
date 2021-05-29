@@ -1,5 +1,13 @@
 # Changes
 
+## 0.3.4 2021-05-29
+
+- Typescript upgraded to 4.3.2
+
+## 0.3.3 2021-02-25
+
+- Typescript upgraded to 4.2.2
+
 ## 0.3.2 2020-12-08
 
 - Relax the meteor core typescript dependency so the compiler works with meteor 1.12
