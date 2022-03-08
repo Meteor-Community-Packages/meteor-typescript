@@ -1,5 +1,9 @@
 # Changes
 
+## 0.3.8 2022-03-08
+
+- Typescript upgraded to 4.6.2
+
 ## 0.3.7 2021-11-30
 
 - Typescript upgraded to 4.5.2
