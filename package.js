@@ -21,7 +21,7 @@ Package.registerBuildPlugin({
 
 Package.onUse(function (api) {
   api.use("isobuild:compiler-plugin@1.0.0");
-  api.versionsFrom("2.6.1");
+  api.versionsFrom("1.10");
   api.use("ecmascript");
   api.use("refapp:meteor-typescript-compiler@" + COMPILER_VERSION);
 });
