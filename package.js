@@ -1,5 +1,5 @@
-const COMPILER_VERSION = "0.3.10";
-const TYPESCRIPT_VERSION = "4.8.2";
+const COMPILER_VERSION = "0.3.11";
+const TYPESCRIPT_VERSION = "4.9.3";
 const MY_VERSION = COMPILER_VERSION; // Keep in sync
 
 Package.describe({
