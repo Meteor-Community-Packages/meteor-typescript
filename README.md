@@ -14,6 +14,10 @@ Some main attributes:
 * Outputs type compilation errors as part of the build process and will fail if a file could not be transpiled to js.
 * Uses settings in tsconfig.json (overrides a few, like "incremental")
 
+If the `TYPESCRIPT_FAIL_ON_COMPILATION_ERRORS` environment variable is set to a value other than 0 or false, compilation errors
+will also make the meteor compilation fail. Since files with compilation errors often still emit javascript code, that is something
+you probably want to enable in ci build environments only.
+
 ## How to install and use
 
 ```sh
