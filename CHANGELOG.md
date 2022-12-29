@@ -1,5 +1,9 @@
 # Changes
 
+## 0.3.12 2022-12-29
+
+- Adding support for environment variable TYPESCRIPT_FAIL_ON_COMPILATION_ERRORS
+
 ## 0.3.11 2022-12-03
 
 - Typescript upgraded to 4.9.3
