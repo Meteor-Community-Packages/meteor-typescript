@@ -1,5 +1,9 @@
 # Changes
 
+## 0.3.15 2023-04-02
+
+- No longer enforces source maps and adds support for an environment variable TYPESCRIPT_SOURCEMAP for overriding the setting in tsconfig.json
+
 ## 0.3.14 2023-03-20
 
 - Upgrade because I aborted the previous deploy which seems to have made it corrupt and I don’t know how to upgrade it.
