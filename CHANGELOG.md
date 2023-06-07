@@ -1,5 +1,9 @@
 # Changes
 
+## 0.3.16 2023-06-07
+
+- Typescript upgraded to 5.1.3
+
 ## 0.3.15 2023-04-02
 
 - No longer enforces source maps and adds support for an environment variable TYPESCRIPT_SOURCEMAP for overriding the setting in tsconfig.json
