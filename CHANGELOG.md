@@ -1,5 +1,9 @@
 # Changes
 
+## 0.3.17 2023-08-25
+
+- Typescript upgraded to 5.2.2
+
 ## 0.3.16 2023-06-07
 
 - Typescript upgraded to 5.1.3
