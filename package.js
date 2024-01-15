@@ -1,4 +1,4 @@
-const COMPILER_VERSION = "0.4.0-meteor3";
+const COMPILER_VERSION = "0.4.0-meteor3-beta0";
 const TYPESCRIPT_VERSION = "5.3.2";
 const MY_VERSION = COMPILER_VERSION; // Keep in sync
 
