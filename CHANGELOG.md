@@ -1,5 +1,10 @@
 # Changes
 
+## 0.3.19 2024-04-12
+
+- Typescript upgraded to 5.4.5
+- Sample app upgraded to Meteor 2.15
+
 ## 0.3.18 2023-11-25
 
 - Typescript upgraded to 5.3.2
