@@ -13,6 +13,6 @@ modules@0.20.0
 modules-runtime@0.13.1
 promise@0.12.2
 react-fast-refresh@0.2.8
-refapp:meteor-typescript@0.3.19
-refapp:meteor-typescript-compiler@0.3.19
+refapp:meteor-typescript@0.5.0
+refapp:meteor-typescript-compiler@0.5.0
 typescript@4.9.5
