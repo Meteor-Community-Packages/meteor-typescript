@@ -1,5 +1,8 @@
 # Changes
 
+## 0.5.1 2024-05-08
+- Trying to create a dual (Meteor 2+3) published package
+
 ## 0.5.0 2024-04-29
 
 - Typescript upgraded to 5.4.5
