@@ -1,5 +1,18 @@
 # Changes
 
+## 0.5.4 2024-10-20
+
+- Typescript bug fix update 5.6.3
+
+- Republished against Meteor 3.0.4
+
+### Why republished?
+
+Since `meteor publish` stores a copy of all compiler dependencies, it is necessary to re-publish to
+get updates to dependencies.
+
+This time, this was done to get the TLA-detection fixes in the npm package @meteorjs/reify@0.25.3 that were brought in by the npm package meteor-babel@7.10.7 by the meteor package babel-compiler@7.11.1.
+
 ## 0.5.3 2024-09-10
 
 - Typescript upgraded to 5.6.2
