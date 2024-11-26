@@ -1,5 +1,9 @@
 # Changes
 
+## 0.5.5 2024-11-26
+
+- Republished against Meteor 3.1
+
 ## 0.5.5-beta31rc0 2024-11-13
 
 - Republished against Meteor 3.1-rc.0 for TLA fixes in babel-compiler
