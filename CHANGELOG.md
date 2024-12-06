@@ -1,5 +1,9 @@
 # Changes
 
+## 0.5.6 2024-12-06
+
+- Typescript 5.7
+
 ## 0.5.5 2024-11-26
 
 - Republished against Meteor 3.1
