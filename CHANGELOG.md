@@ -1,5 +1,10 @@
 # Changes
 
+## 1.0.0 2025-03-11
+
+- Typescript 5.8
+- Removed Meteor 2 sample project in favour of the Meteor 3 one
+
 ## 0.5.6 2024-12-06
 
 - Typescript 5.7

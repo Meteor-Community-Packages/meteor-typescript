@@ -1,5 +1,5 @@
-const COMPILER_VERSION = "0.5.6";
-const TYPESCRIPT_VERSION = "5.7.2";
+const COMPILER_VERSION = "1.0.0";
+const TYPESCRIPT_VERSION = "5.8.2";
 const MY_VERSION = COMPILER_VERSION; // Keep in sync
 
 Package.describe({
@@ -21,7 +21,7 @@ Package.registerBuildPlugin({
 
 Package.onUse(function (api) {
   api.use("isobuild:compiler-plugin@1.0.0");
-  api.versionsFrom("2.12");
+  api.versionsFrom("3.1");
   api.use("ecmascript");
   api.use("refapp:meteor-typescript-compiler@" + COMPILER_VERSION);
 });

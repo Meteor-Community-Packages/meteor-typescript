@@ -26,7 +26,12 @@
     "baseUrl": ".",
     "paths": {
       /* Support absolute /imports/* with a leading '/' */
-      "/*": ["*"]
+      "/*": ["*"],
+      // Workaround for https://github.com/zodern/meteor-types/issues/10
+      "meteor/react-meteor-data": [
+        "./node_modules/@types/meteor/react-meteor-data.d.ts"
+      ],
+      "meteor/*": ["./.meteor/local/types/packages.d.ts"]
     },
     "moduleResolution": "node",
     "resolveJsonModule": true,

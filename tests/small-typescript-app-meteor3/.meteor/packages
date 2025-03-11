@@ -6,7 +6,7 @@
 
 meteor-base@1.5.2             # Packages every Meteor app needs to have
 mobile-experience@1.1.2       # Packages for a great mobile UX
-mongo@2.0.3                   # The database Meteor supports right now
+mongo@2.1.0                   # The database Meteor supports right now
 reactive-var@1.0.13            # Reactive variable for tracker
 
 standard-minifier-css@1.9.3   # CSS minifier run for production mode
@@ -20,3 +20,4 @@ insecure@1.0.8                # Allow all DB writes from clients (for prototypin
 static-html@1.4.0             # Define static page content in .html files
 react-meteor-data@3.0.2       # React higher-order component for reactively tracking Meteor data
 refapp:meteor-typescript
+zodern:types
