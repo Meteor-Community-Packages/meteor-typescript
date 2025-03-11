@@ -1,4 +1,4 @@
-babel-compiler@7.11.2
+babel-compiler@7.11.3
 babel-runtime@1.5.2
 core-runtime@1.0.0
 dynamic-import@0.7.4
@@ -8,12 +8,12 @@ ecmascript-runtime-client@0.12.2
 ecmascript-runtime-server@0.11.1
 fetch@0.1.5
 inter-process-messaging@0.1.2
-meteor@2.0.2
-modern-browsers@0.1.11
+meteor@2.1.0
+modern-browsers@0.2.0
 modules@0.20.3
 modules-runtime@0.13.2
 promise@1.0.0
 react-fast-refresh@0.2.9
-refapp:meteor-typescript@0.5.6
-refapp:meteor-typescript-compiler@0.5.6
+refapp:meteor-typescript@1.0.0
+refapp:meteor-typescript-compiler@1.0.0
 typescript@5.6.3
