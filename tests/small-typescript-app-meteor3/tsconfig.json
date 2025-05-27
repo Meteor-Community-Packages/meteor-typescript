@@ -10,6 +10,7 @@
     "noEmit": true,
     "importHelpers": true,
     "allowSyntheticDefaultImports": true, 
+    "sourceMap": true,
 
     /* Strict Type-Checking Options */
     "strict": true,
