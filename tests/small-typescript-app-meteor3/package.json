@@ -22,7 +22,11 @@
     "typescript": "^5.8.2"
   },
   "meteor": {
-    "modern": true,
+    "modern": {
+      "transpiler": {
+        "verbose": true
+      }
+    },
     "mainModule": {
       "client": "client/main.tsx",
       "server": "server/main.ts"
