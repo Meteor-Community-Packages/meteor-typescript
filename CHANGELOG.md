@@ -1,5 +1,10 @@
 # Changes
 
+## 1.0.1 2026-03-24
+
+- Typescript 6.0
+- Maybe the final release, since meteor 3.4 with rspack obsoletes ISOBuild compilers
+
 ## 1.0.0 2025-03-11
 
 - Typescript 5.8
