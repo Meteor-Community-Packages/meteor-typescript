@@ -1,5 +1,14 @@
 # Changes
 
+## 1.0.2 2026-04-29
+
+- Mark `refapp:meteor-typescript-compiler` as `devOnly` for Meteor 3.4
+  compatibility. In Meteor 3.4 the core `babel-compiler` package became
+  `devOnly`, so referencing `Package['babel-compiler'].Babel` at server
+  startup crashed production bundles. Drop the runtime `api.use` of the
+  compiler from `refapp:meteor-typescript` for clarity — the build plugin
+  still pulls it in via `Package.registerBuildPlugin`'s `use:` field.
+
 ## 1.0.1 2026-03-24
 
 - Typescript 6.0
